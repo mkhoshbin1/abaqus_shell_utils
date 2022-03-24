@@ -34,7 +34,7 @@ A machine can have multiple versions of Abaqus™ installed.
 They are distinguished by the command used to run them,
 for example `abq2021hf4` refers to Abaqus™ 2021.HF4
 and `abaqus` refers to the default installation.
-These commands correspond to the `.bat` files
+These commands correspond to the *.bat* files
 usually found in `C:\SIMULIA\Commands`.
 
 By default, the package uses the `abaqus` command
