@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Part of the abaqus_shell_utils package.
+; Github Repo: https://github.com/mkhoshbin1/abaqus_shell_utils
+; Website:     https://www.mkhoshbin.com
+; License:     The MIT License
+; Copyright 2022 Mohammadreza Khoshbin.
+
+; Delete the registry keys created using register_commands.reg
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\abaqus-open]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\abaqus-open\command]
+[-HKEY_CLASSES_ROOT\*\shell\abaqus-import-inp]
+[-HKEY_CLASSES_ROOT\*\shell\abaqus-import-inp\command]

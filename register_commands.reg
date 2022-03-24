@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+; Part of the abaqus_shell_utils package.
+; Github Repo: https://github.com/mkhoshbin1/abaqus_shell_utils
+; Website:     https://www.mkhoshbin.com
+; License:     The MIT License
+; Copyright 2022 Mohammadreza Khoshbin.
+
+
+; Add the "Open Abaqus here" command for shift + right click on directory background.
+[HKEY_CLASSES_ROOT\Directory\Background\shell\abaqus-open]
+@="Open Abaqus here"
+"Extended"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\abaqus-open\command]
+@="powershell.exe -noexit -command abaqus cae noStartupDialog"
+
+; Add the "Import input file in Abaqus" command for .inp files.
+[HKEY_CLASSES_ROOT\*\shell\abaqus-import-inp]
+@="Import input file in Abaqus"
+"AppliesTo"="System.FileExtension:=.inp"
+
+[HKEY_CLASSES_ROOT\*\shell\abaqus-import-inp\command]
+@="powershell.exe -noexit import_abaqus_input_file.ps1 %1"
