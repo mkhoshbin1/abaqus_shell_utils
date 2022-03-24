@@ -58,4 +58,4 @@ and PowerShell:
   - [Which special variables are available when writing a shell command for a context menu](https://superuser.com/questions/136838)
   - [Add a Windows Shell context menu entry for a specific extension (not file type)](https://stackoverflow.com/questions/21362892)
   = [Gaining administrator privileges in PowerShell](https://serverfault.com/a/1058407)
-  - The Complete Guide to PowerShell Punctuation](https://www.red-gate.com/simple-talk/sysadmin/powershell/the-complete-guide-to-powershell-punctuation/) by Michael Sorens
+  - [The Complete Guide to PowerShell Punctuation](https://www.red-gate.com/simple-talk/sysadmin/powershell/the-complete-guide-to-powershell-punctuation/) by Michael Sorens
