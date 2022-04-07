@@ -27,9 +27,9 @@ if (Get-Command $abaqus_cmd_name -errorAction SilentlyContinue){}
 else{throw "The command '$abaqus_cmd_name' is not defined. Check C:\SIMULIA\Commands for available commands."}
 
 # Check the file extension.
-$extension = (Get-Item $args[0] -ErrorAction Stop).Extension
+$extension = (Get-Item "$args" -ErrorAction Stop).Extension
 if ($extension -ne '.inp' ) {throw "Expected '.inp' file, but received '$extension' file."}
 
 # Open abaqus and run the accompanying script to import the input file.
 $script_path = Join-Path -Path $PSScriptRoot -ChildPath 'import_abaqus_input_file.py'
-& $abaqus_cmd_name cae noStartupDialog script=$script_path -- $args[0]
+& $abaqus_cmd_name cae noStartupDialog script=$script_path -- "$args"
