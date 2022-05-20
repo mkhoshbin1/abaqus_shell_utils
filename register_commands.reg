@@ -21,4 +21,4 @@ Windows Registry Editor Version 5.00
 "AppliesTo"="System.FileExtension:=.inp"
 
 [HKEY_CLASSES_ROOT\*\shell\abaqus-import-inp\command]
-@="powershell.exe -noexit import_abaqus_input_file.ps1 %1"
+@="powershell.exe -noexit import_abaqus_input_file.ps1 '%1'"
