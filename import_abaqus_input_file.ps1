@@ -12,7 +12,8 @@ Write-Host @"
  | Github Repo: https://github.com/mkhoshbin1/abaqus_shell_utils                 |
  | Website:     https://www.mkhoshbin.com                                        |
  | License:     The MIT License                                                  |
- | Copyright 2022 Mohammadreza Khoshbin.                                         |
+ |                                                                               |
+ | Copyright 2022-2024 Mohammadreza Khoshbin.                                    |
  +-------------------------------------------------------------------------------+
 
 "@
@@ -33,3 +34,7 @@ if ($extension -ne '.inp' ) {throw "Expected '.inp' file, but received '$extensi
 # Open abaqus and run the accompanying script to import the input file.
 $script_path = Join-Path -Path $PSScriptRoot -ChildPath 'import_abaqus_input_file.py'
 & $abaqus_cmd_name cae noStartupDialog script=$script_path -- "$args"
+
+# End the interactive session.
+Write-Host "Abaqus was closed. Exiting PowerShell..."
+[Environment]::Exit(0)
