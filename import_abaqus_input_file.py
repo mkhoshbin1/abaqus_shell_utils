@@ -24,4 +24,12 @@ for model_name in mdb.models.keys():
     if model_name != model.name:
         del mdb.models[model_name]
 
+# Set the color mapping to 'Set'.
+viewport = session.viewports.values()[0]
+viewport.setValues(displayedObject=model.parts.values()[0])
+viewport.enableMultipleColors()
+viewport.setColor(initialColor='#BDBDBD')
+viewport.setColor(colorMapping=viewport.colorMappings['Set'])
+viewport.disableMultipleColors()
+
 print "Imported model '%s' from input file at '%s'." % (inp_file_name, inp_file_path)
