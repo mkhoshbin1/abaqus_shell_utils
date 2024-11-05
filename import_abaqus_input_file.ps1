@@ -5,10 +5,11 @@
 
 Write-Host @"
  +-------------------------------------------------------------------------------+
+ | abaqus_shell_utils v.1.1.0                                                    |
+ |                                                                               |
  | This utility imports a SIMULIA Abaqus (TM) input file.                        |
  | Abaqus must already be installed and the abaqus command must be recognizable. |
  |                                                                               |
- | Part of the abaqus_shell_utils package.                                       |
  | Github Repo: https://github.com/mkhoshbin1/abaqus_shell_utils                 |
  | Website:     https://www.mkhoshbin.com                                        |
  | License:     The MIT License                                                  |
