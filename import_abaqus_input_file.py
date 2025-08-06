@@ -4,15 +4,16 @@ Part of the abaqus_shell_utils package.
 Github Repo: https://github.com/mkhoshbin1/abaqus_shell_utils
 Website:     https://www.mkhoshbin.com
 License:     The MIT License
-Copyright 2022 Mohammadreza Khoshbin.
+Copyright 2022-2025 Mohammadreza Khoshbin.
 """
 
+from __future__ import print_function
 import sys
 import os
 
 # Process the path.
 inp_file_path = sys.argv[-1]
-print "Attempting to import input file from '%s'." % inp_file_path
+print("Attempting to import input file from '%s'." % inp_file_path)
 inp_file_name = os.path.split(inp_file_path)[1]
 
 # Import the model from input file.
@@ -32,4 +33,5 @@ viewport.setColor(initialColor='#BDBDBD')
 viewport.setColor(colorMapping=viewport.colorMappings['Set'])
 viewport.disableMultipleColors()
 
-print "Imported model '%s' from input file at '%s'." % (inp_file_name, inp_file_path)
+print("Imported model '%s' from input file at '%s'." % (inp_file_name, inp_file_path))
+        

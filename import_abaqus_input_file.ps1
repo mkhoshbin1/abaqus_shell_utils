@@ -5,7 +5,7 @@
 
 Write-Host @"
  +-------------------------------------------------------------------------------+
- | abaqus_shell_utils v.1.1.0                                                    |
+ | abaqus_shell_utils v.1.2.0                                                    |
  |                                                                               |
  | This utility imports a SIMULIA Abaqus (TM) input file.                        |
  | Abaqus must already be installed and the abaqus command must be recognizable. |
@@ -14,7 +14,7 @@ Write-Host @"
  | Website:     https://www.mkhoshbin.com                                        |
  | License:     The MIT License                                                  |
  |                                                                               |
- | Copyright 2022-2024 Mohammadreza Khoshbin.                                    |
+ | Copyright 2022-2025 Mohammadreza Khoshbin.                                    |
  +-------------------------------------------------------------------------------+
 
 "@
